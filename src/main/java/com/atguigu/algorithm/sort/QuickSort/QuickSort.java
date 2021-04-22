@@ -1,4 +1,4 @@
-package com.atguigu.sort;
+package com.atguigu.algorithm.sort.QuickSort;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

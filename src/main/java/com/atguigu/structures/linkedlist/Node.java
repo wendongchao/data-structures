@@ -1,8 +1,6 @@
-package com.atguigu.linkedlist;
+package com.atguigu.structures.linkedlist;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * 链表结构中的一个节点

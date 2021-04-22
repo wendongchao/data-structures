@@ -1,4 +1,4 @@
-package com.atguigu.sparsearray;
+package com.atguigu.structures.sparsearray;
 
 /**
  * 稀疏数组

@@ -1,6 +1,4 @@
-package com.atguigu.linkedlist;
-
-import java.util.Stack;
+package com.atguigu.structures.linkedlist;
 
 /**
  * 单链表

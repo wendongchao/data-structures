@@ -1,4 +1,4 @@
-package com.atguigu.sort;
+package com.atguigu.algorithm.sort.ShellSort;
 
 import java.util.Arrays;
 

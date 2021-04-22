@@ -1,4 +1,4 @@
-package com.atguigu.linkedlist;
+package com.atguigu.structures.linkedlist;
 
 
 
