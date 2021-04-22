@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class CircleArrayQueueDemo {
 
     public static void main(String[] args) {
-
         //测试一把
         System.out.println("测试数组模拟环形队列的案例~~~");
 
@@ -101,6 +100,7 @@ class CircleArray {
         //直接将数据加入
         arr[rear] = n;
         //将 rear 后移, 这里必须考虑取模
+        //为了rear往后移动时，保证下标不超过最大容量值
         rear = (rear + 1) % maxSize;
     }
 
