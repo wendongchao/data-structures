@@ -24,7 +24,7 @@ public class BubbleSort02 {
         System.out.println(Arrays.toString(arr));
     }
 
-    // 冒泡排序 的时间复杂度 O(n^2)
+    // 冒泡排序 的时间复杂度 O(n)-O(n^2)
     public static void bubbleSort(int[] arr) {
         // 临时变量
         int temp = 0;
