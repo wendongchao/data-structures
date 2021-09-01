@@ -1,4 +1,4 @@
-package com.atguigu.algorithm.sort.Bubble;
+package com.itcast.sort.Bubble;
 
 import org.springframework.util.StopWatch;
 

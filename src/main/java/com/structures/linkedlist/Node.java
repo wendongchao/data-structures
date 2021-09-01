@@ -1,4 +1,4 @@
-package com.atguigu.structures.linkedlist;
+package com.structures.linkedlist;
 
 import lombok.Data;
 

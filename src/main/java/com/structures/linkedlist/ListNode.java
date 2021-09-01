@@ -1,4 +1,4 @@
-package com.atguigu.structures.linkedlist;
+package com.structures.linkedlist;
 
 /**
  * 链表结构中的链表

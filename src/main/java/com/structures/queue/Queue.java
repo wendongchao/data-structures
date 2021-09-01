@@ -1,4 +1,4 @@
-package com.atguigu.structures.queue;
+package com.structures.queue;
 
 /**
  * 队列创建，及基础操作

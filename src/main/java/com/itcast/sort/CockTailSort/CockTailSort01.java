@@ -1,4 +1,4 @@
-package com.atguigu.algorithm.sort.CockTailSort;
+package com.itcast.sort.CockTailSort;
 
 import org.springframework.util.StopWatch;
 

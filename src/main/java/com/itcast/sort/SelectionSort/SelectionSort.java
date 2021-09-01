@@ -1,4 +1,4 @@
-package com.atguigu.algorithm.sort.SelectionSort;
+package com.itcast.sort.SelectionSort;
 
 /**
  * @Author wendongchao

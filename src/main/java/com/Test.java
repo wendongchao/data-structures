@@ -1,4 +1,4 @@
-package com.atguigu;
+package com;
 
 import java.io.*;
 
