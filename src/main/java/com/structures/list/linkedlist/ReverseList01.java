@@ -1,10 +1,7 @@
-package com.structures.linkedlist;
-
-
-
+package com.structures.list.linkedlist;
 
 /**
- * 单链表反转
+ * 单链表反转-迭代
  * 1->2->3->4->5->null
  * null<-1<-2<-3<-4<-5
  * 参考链接
@@ -12,7 +9,7 @@ package com.structures.linkedlist;
  * https://mp.weixin.qq.com/s/pL_yxjhf5bafxF3Sb83Rfw
  * https://www.jb51.net/article/109405.htm
  */
-public class ReverseList {
+public class ReverseList01 {
 
     public static void main(String[] args) {
         ListNode listNode = new ListNode();

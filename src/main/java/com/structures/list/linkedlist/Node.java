@@ -1,4 +1,4 @@
-package com.structures.linkedlist;
+package com.structures.list.linkedlist;
 
 import lombok.Data;
 

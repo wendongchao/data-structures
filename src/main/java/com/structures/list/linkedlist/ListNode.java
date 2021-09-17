@@ -1,4 +1,4 @@
-package com.structures.linkedlist;
+package com.structures.list.linkedlist;
 
 /**
  * 链表结构中的链表
