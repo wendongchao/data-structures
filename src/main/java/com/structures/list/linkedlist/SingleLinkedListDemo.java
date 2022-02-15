@@ -1,9 +1,9 @@
-package com.atguigu.linkedlist;
+package com.structures.list.linkedlist;
 
-import java.util.Stack;
-
+/**
+ * 单链表
+ */
 public class SingleLinkedListDemo {
-
     public static void main(String[] args) {
         //进行测试
         //先创建节点
@@ -14,7 +14,6 @@ public class SingleLinkedListDemo {
 
         //创建要给链表
         SingleLinkedList singleLinkedList = new SingleLinkedList();
-
 
         //加入
         singleLinkedList.add(hero1);
@@ -27,9 +26,9 @@ public class SingleLinkedListDemo {
         singleLinkedList.list();
 
 //		System.out.println("反转单链表~~");
-//		reversetList(singleLinkedList.getHead());
+		//reversetList(singleLinkedList.getHead());
 //		singleLinkedList.list();
-
+        System.out.println(singleLinkedList.getHead());
         System.out.println("测试逆序打印单链表, 没有改变链表的结构~~");
       //  reversePrint(singleLinkedList.getHead());
 
@@ -63,25 +62,13 @@ public class SingleLinkedListDemo {
 		HeroNode res = findLastIndexNode(singleLinkedList.getHead(), 3);
 		System.out.println("res=" + res);
 */
-
     }
-
-
-
-
-
-
-
-
-
 }
-
-
+//创建单链表，有头节点
 //定义SingleLinkedList 管理我们的英雄
 class SingleLinkedList {
     //先初始化一个头节点, 头节点不要动, 不存放具体的数据
     private HeroNode head = new HeroNode(0, "", "");
-
 
     //返回头节点
     public HeroNode getHead() {
@@ -93,16 +80,15 @@ class SingleLinkedList {
     //1. 找到当前链表的最后节点
     //2. 将最后这个节点的next 指向 新的节点
     public void add(HeroNode heroNode) {
-
         //因为head节点不能动，因此我们需要一个辅助遍历 temp
         HeroNode temp = head;
         //遍历链表，找到最后
         while(true) {
             //找到链表的最后
-            if(temp.next == null) {//
+            if(temp.next == null) {
                 break;
             }
-            //如果没有找到最后, 将将temp后移
+            //如果没有找到最后, 将temp后移
             temp = temp.next;
         }
         //当退出while循环时，temp就指向了链表的最后
@@ -114,17 +100,16 @@ class SingleLinkedList {
     //(如果有这个排名，则添加失败，并给出提示)
     public void addByOrder(HeroNode heroNode) {
         //因为头节点不能动，因此我们仍然通过一个辅助指针(变量)来帮助找到添加的位置
-        //因为单链表，因为我们找的temp 是位于 添加位置的前一个节点，否则插入不了
+        //因为单链表，所以我们找的temp是位于添加位置的前一个节点，否则插入不了
         HeroNode temp = head;
         boolean flag = false; // flag标志添加的编号是否存在，默认为false
         while(true) {
             if(temp.next == null) {//说明temp已经在链表的最后
-                break; //
+                break;
             }
             if(temp.next.no > heroNode.no) { //位置找到，就在temp的后面插入
                 break;
             } else if (temp.next.no == heroNode.no) {//说明希望添加的heroNode的编号已然存在
-
                 flag = true; //说明编号存在
                 break;
             }
@@ -157,8 +142,7 @@ class SingleLinkedList {
             if (temp == null) {
                 break; //已经遍历完链表
             }
-            if(temp.no == newHeroNode.no) {
-                //找到
+            if(temp.no == newHeroNode.no) {//找到链表节点
                 flag = true;
                 break;
             }
@@ -193,7 +177,7 @@ class SingleLinkedList {
         }
         //判断flag
         if(flag) { //找到
-            //可以删除
+            //可以删除，删除的意思，是把next指针指向下一个位置
             temp.next = temp.next.next;
         }else {
             System.out.printf("要删除的 %d 节点不存在\n", no);
@@ -216,13 +200,13 @@ class SingleLinkedList {
             }
             //输出节点的信息
             System.out.println(temp);
-            //将temp后移， 一定小心
+            //将temp后移， 一定小心？？
             temp = temp.next;
         }
     }
 }
-
-//定义HeroNode ， 每个HeroNode 对象就是一个节点
+//创建一个单链表中的节点
+//定义HeroNode ， 每个HeroNode对象就是一个节点
 class HeroNode {
     public int no;
     public String name;

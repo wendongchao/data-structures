@@ -1,4 +1,4 @@
-package com.atguigu.stack;
+package com.structures.stack;
 
 /**
  * 基于数组实现的顺序栈

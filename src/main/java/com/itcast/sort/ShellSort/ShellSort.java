@@ -1,6 +1,5 @@
-package com.atguigu.sort;
+package com.itcast.sort.ShellSort;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
