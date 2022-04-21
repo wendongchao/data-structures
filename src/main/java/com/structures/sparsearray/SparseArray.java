@@ -1,4 +1,4 @@
-package com.structures.array.sparsearray;
+package com.structures.sparsearray;
 
 /**
  * 稀疏数组
